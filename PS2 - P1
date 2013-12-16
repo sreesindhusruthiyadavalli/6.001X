@@ -1,0 +1,12 @@
+# Paste your code into this box
+Monthly_interest_rate = 0
+Previous_balance = balance
+Total_paid = 0
+Updated_balance_each_month = 0
+for mnth in range(1,13):
+  Monthly_interest_rate = (annualInterestRate) / 12.0
+  Minimum_monthly_payment = (monthlyPaymentRate) * (Previous_balance)
+  Monthly_unpaid_balance = (Previous_balance) - (Minimum_monthly_payment)
+  Updated_balance_each_month = (Monthly_unpaid_balance) + \
+                        (Monthly_interest_rate * Monthly_unpaid_balance)
+    
